@@ -1,0 +1,7 @@
+Step	WhiteboxTools Tool	Input(s)	Output
+1. Fill	FillDepressions	DEM	Filled DEM
+2. Flow Dir	D8Pointer	Filled DEM	Flow Direction Raster
+3. Accum	D8FlowAccumulation	Filled DEM	Flow Accumulation Raster
+4. Pour Pt	(Manual / GIS)	Flow Accum raster, map	Pour Point(s)
+5. Snap	SnapPourPoints	Pour Pt, Flow Accum.	Snapped Pour Point(s)
+6. Watershed	Watershed	Flow Dir, Pour Pt(s)	Catchment Raster
